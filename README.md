@@ -1,12 +1,32 @@
-# React + Vite
+A modern, responsive Food Delivery Website built using the MERN Stack. This app allows users to browse a diverse menu, explore food categories, and place online orders with ease. Designed with a clean UI and smooth animations for an engaging user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
 
-Currently, two official plugins are available:
+🍕 Explore Menu – Browse through a wide variety of dishes with images and details.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Search & Filter – Quickly find meals by category or keyword.
 
-## Expanding the ESLint configuration
+🛒 Add to Cart – Select items and manage them in the cart.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👤 User Authentication – Sign up, log in, and maintain user sessions.
+
+📱 Responsive Design – Optimized for mobile, tablet, and desktop.
+
+⚡ Fast & Modern UI – Built with React and styled for smooth performance.
+
+🛠️ Tech Stack
+Frontend
+
+React.js
+
+CSS / Tailwind 
+
+Context API / Redux (for state management)
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB (for storing users, menu items, and orders)
