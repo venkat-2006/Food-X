@@ -1,4 +1,5 @@
  import { food_list } from "../assets/assets";
+ import React from "react";
  export const StoreContext = React.createContext(null);
 
 const StoreContextProvider = (props)=>{
