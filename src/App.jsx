@@ -12,7 +12,7 @@ const App = () => {
   const[showLoginPopup,setShowLoginPopup]=React.useState(false);
   return (
     <>
-    {showLoginPopup?<LoginPopup/>:<></>}
+    {showLoginPopup?<LoginPopup setShowLoginPopup={setShowLoginPopup}/>:<></>}
     <div className="app">
       <Navbar setShowLoginPopup={setShowLoginPopup} />
       <Routes>
