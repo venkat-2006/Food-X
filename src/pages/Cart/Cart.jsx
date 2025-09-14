@@ -7,6 +7,7 @@ const Cart = () => {
 
   return (
     <div className='cart'>
+      {/* Cart items */}
       <div className="cart-items">
         <div className="cart-items-title">
           <p>Items</p>
@@ -21,22 +22,57 @@ const Cart = () => {
         {food_list && cartItems && food_list.map((item) => {
           if (item && item._id && cartItems[item._id] > 0) {
             return (
-              <div>
-              <div key={item._id} className="cart-items-title cart-items-item">
-                <img src={item.image} alt="" />
-                <p>{item.name}</p>
-                <p>${item.price}</p>
-                <p>{cartItems[item._id]}</p>
-                <p>${(item.price * cartItems[item._id]).toFixed(2)}</p>
-                <p>x</p>
-                
-              </div>
-              <hr />
+              <div key={item._id}>
+                <div className="cart-items-title cart-items-item">
+                  <img src={item.image} alt="" />
+                  <p>{item.name}</p>
+                  <p>${item.price}</p>
+                  <p>{cartItems[item._id]}</p>
+                  <p>${(item.price * cartItems[item._id]).toFixed(2)}</p>
+                  <p onClick={() => removeFromCart(item._id)} className='cross'>x</p>
+                </div>
+                <hr />
               </div>
             )
           }
-          
+          return null;
         })}
+      </div>
+
+      {/* Cart bottom (totals + promo code) */}
+      <div className="cart-bottom">
+        
+        {/* Left: Cart total */}
+        <div className="cart-total">
+          <h2>Cart Total</h2>
+          <div>
+            <div className="cart-total-details">
+              <p>Subtotal</p>
+              <p>{0}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details">
+              <p>Delivery fee</p>
+              <p>{2}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details">
+              <b>Total</b>
+              <b>{0}</b>
+            </div>
+          </div>
+          <button>Proceed to checkout</button>
+        </div>
+
+        
+        <div className="cart-promocode">
+          <p>If you have a promo code, enter it here!</p>
+          <div className="cart-promocode-input">
+            <input type="text" placeholder="Promo code" />
+            <button>Submit</button>
+          </div>
+        </div>
+
       </div>
     </div>
   )
