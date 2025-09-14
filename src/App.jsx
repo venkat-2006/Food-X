@@ -6,17 +6,20 @@ import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/Placeorder'
 import Home from './pages/Home/Home'
 import Footer from './components/Footer/Footer'
+import LoginPopup from './components/LoginPopup/LoginPopup'
 
 const App = () => {
+  const[showLoginPopup,setShowLoginPopup]=React.useState(false);
   return (
     <>
+    {showLoginPopup?<LoginPopup/>:<></>}
     <div className="app">
-      <Navbar />
+      <Navbar setShowLoginPopup={setShowLoginPopup} />
       <Routes>
-        {/* Define your routes here */}
+       
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="PlaceOrder" element={<PlaceOrder />} />
+        <Route path="order" element={<PlaceOrder />} />
 
 
       </Routes>
