@@ -1,4 +1,8 @@
-A modern, responsive Food Delivery Website built using the MERN Stack. This app allows users to browse a diverse menu, explore food categories, and place online orders with ease. Designed with a clean UI and smooth animations for an engaging user experience.
+🍴 Food-X
+
+A modern, responsive Food Delivery Website inspired by Zomato, built with React.js.
+Food-X lets users browse a diverse menu, explore food categories, and manage their cart with ease.
+Designed with a clean UI and smooth animations for an engaging user experience.
 
 ✨ Features
 
@@ -7,8 +11,6 @@ A modern, responsive Food Delivery Website built using the MERN Stack. This app 
 🔍 Search & Filter – Quickly find meals by category or keyword.
 
 🛒 Add to Cart – Select items and manage them in the cart.
-
-👤 User Authentication – Sign up, log in, and maintain user sessions.
 
 📱 Responsive Design – Optimized for mobile, tablet, and desktop.
 
@@ -19,14 +21,18 @@ Frontend
 
 React.js
 
-CSS / Tailwind 
+CSS / Tailwind
 
-Context API / Redux (for state management)
+Context API (for state management)
 
-Backend
+🚀 Future Enhancements
 
-Node.js
+Food-X will be upgraded into a full-stack MERN application with:
 
-Express.js
+👤 User Authentication (Sign up, Log in, Sessions)
 
-MongoDB (for storing users, menu items, and orders)
+🧾 Online Orders & Checkout
+
+⚡ Backend APIs with Node.js + Express.js
+
+🗄️ Database support with MongoDB
