@@ -1,4 +1,4 @@
-🍴 Food-X
+🍴 Food-X(Tomato)!!
 
 A modern, responsive Food Delivery Website inspired by Zomato, built with React.js.
 Food-X lets users browse a diverse menu, explore food categories, and manage their cart with ease.
@@ -19,7 +19,7 @@ Designed with a clean UI and smooth animations for an engaging user experience.
 🛠️ Tech Stack
 Frontend
 
-React.js
+React.js (mainly hooks)
 
 CSS / Tailwind
 
